@@ -1,3 +1,4 @@
 .character__card {
 	display: flex;
+	width: 25%;
 }

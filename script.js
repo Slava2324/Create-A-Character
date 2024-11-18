@@ -1,9 +1,18 @@
+createButton = document.querySelector(".create__button");
+
 let character = {
-	firstName: "", 
-	lastName: "", 
-	age: "",
+	firstName: "a", 
+	lastName: "b", 
+	age: 10,
 };
 
-character.profession = ""
+character.profession = "c"
 
-console.log(character)
+let tellAboutCharacter = function() {
+	console.log(character);
+	console.log(Object.keys(character));
+	console.log(Object.values(character));
+	console.log(character.firstName);
+};
+
+createButton.addEventListener("click", tellAboutCharacter);
